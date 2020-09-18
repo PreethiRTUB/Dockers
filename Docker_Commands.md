@@ -13,10 +13,24 @@ $ docker build -q --no-cache -t ${IMAGE}:${VERSION} .
 
 ### Docker run 
 ```
-$ docker run -it --user=root -p 5000:8080 ${IMAGE}:${TAG} sh
+$ docker run -it --user=root -p 8000:8080 ${IMAGE}:${TAG} sh
 or
 $ docker run --name flask -e AUTHOR="Preethi" -d -P flask:1.0
 ```
+
+
+## Docker Volumes
+Docker volume common commands
+
+```
+$ docker volume create test_vol
+$ docker volume ls
+$ docker volume inspect test_vol
+```
+
+
+
+
 
 
 
@@ -74,4 +88,9 @@ $ docker network ls
 $ docker network rm c520032c3d31 (network ids)
 $ docker network prune
 $ docker network prune -a --filter "until=12h"
+```
+
+### Docker information
+```
+$ docker info
 ```
