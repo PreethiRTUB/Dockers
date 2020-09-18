@@ -20,4 +20,4 @@ COPY templates/index.html /usr/src/app/templates/
 EXPOSE 5000
 
 # run the application
-CMD ["python", "/usr/src/app/app.py"]
+CMD ["python3", "/usr/src/app/app.py"]
